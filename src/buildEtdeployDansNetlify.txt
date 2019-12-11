@@ -1,0 +1,3 @@
+On va deployer l'app dans Netlify
+
+commande : npx netlify-cli deploy --prod => ca va nous permettre de creer ou de mettre a jour un site existant 
