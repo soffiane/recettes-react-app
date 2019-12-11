@@ -1,0 +1,18 @@
+Code des regles de firebase 
+
+    {
+      "rules": {
+        ".read": true,
+        ".write": "!data.exists()",
+        "$box" : {
+          ".write": "auth != null && (!data.exists() || data.child('chef').val() === auth.uid)",
+          ".read": true
+        }
+      }
+    }
+
+    Explications :
+    qui peut lire ? tout le monde 
+    $box represente chaque box de la BDD
+    qui peut ecrire des données dans la BDD ? Seulement si il n'existe pas deja des données similaires (pas d'overwrite)
+    A l'interieur de Soffiane ? que si on est connecté et que pas de données ou que chef soit la personne connecté de firebase (uid)

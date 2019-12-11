@@ -1,0 +1,8 @@
+pour verifier les types des props lors d'un debug par exemple
+props et type attendu
+MyComponent.propTypes = {
+    optionalArray = PropTypes.array
+    optionalBool = PropTypes.boolean
+    optionalFunc = PropTypes.func 
+    etc... PropTypes.number  PropTypes.object  PropTypes.string PropTypes.symbol 
+}

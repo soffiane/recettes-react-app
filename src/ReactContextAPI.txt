@@ -1,0 +1,3 @@
+Jusqu'a present, quand on avait besoin d'un props dans plusieurs composant, on le pasait d'un composant à l'autre
+Parfois des dizaines de fois, ce qui n'est pas toujours très pratique
+On cree des Component qui vont servir de contexte => exemple de Color.js

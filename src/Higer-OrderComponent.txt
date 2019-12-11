@@ -1,0 +1,3 @@
+Component parent d'un autre Component
+factoriser le code (comme pour la programmation fonctionnelle)
+C'est un pattern non specifique a React pour creer du code reutilisable

@@ -1,0 +1,5 @@
+Pas de consignes pour la structure du projet (contrairement a java)
+React propose deux moyens
+Grouper par fonctionnalité ou par routes
+Grouper par type de fichier. Exemple /API et /component
+Eviter trop imbriqué des dossiers et restez simple dans le choix de la structure

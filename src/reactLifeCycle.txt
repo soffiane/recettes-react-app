@@ -1,0 +1,28 @@
+Les cycles de vie dans react
+3 phases :
+
+Montage : quand le composant est monté
+    1 - constructor() -> permet d'initaliser un component
+    constructor(){
+        super(props)
+        this.state = ...
+        this.handleClick = this.handleClick.bind(this)
+    }
+    2 - render() -> on affiche ce qui doit s'afficher
+    React met a jour le DOM et les refs 
+    3 - componentDidMount() -> effectue une action apres le rendu
+
+Mise à jour : quand le state/props est modifié
+    1- render() -> on fait un re-rendu avec le nouveau state/props
+    React met a jour le DOM et les refs
+    2- componentDidUpdate() -> juste apres le re-rendu
+
+    autre etape du cycle de vie particulier : 
+        - shouldComponentUpdate() -> on peut annuler le re-render du component
+        - getSnapshotBeforeUpdate() -> phase de precommit
+
+Demontage : quand le composant est démonté
+    componentWillUnmount() -> juste avant le demontage du component
+
+    Phases de render
+    Phases de commit
