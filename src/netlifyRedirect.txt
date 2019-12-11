@@ -1,0 +1,7 @@
+normalement notre routage dans l'app est gere par React router mais il n'y a pas ca dans netlify
+ce qui explique pourquoi a chaque fois qu'on fait retour dans navigateur on a un notfound
+pour gerer la redirection dans netlifly on ajoute dans le dossier build (qu'on deploie dans netlify) un fichier _redirect
+et dans le quel on indique comment va etre rediriger les pages
+react ne genere qu'un seul fichier : le index.html donc on redirige tout vers index.html
+on ecrit :
+/* /index.html 200
